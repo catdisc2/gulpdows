@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gulping Windowz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      button {
+        border-style: outset;
+      }
+      #tbitem {
+        width: 100px;
+        font-weight: lighter;
+        text-align: left;
+      }
+      #dtitem {
+        font-weight: lighter;
+        text-align: center;
+        background-color: transparent;
+        width: 50px;
+      }
+      #dtitem > button {
+        width: 50px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        color: white;
+      }
+      #dtitem > button:target {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      #dtitem > img {
+        position: relative;
+        right: -5px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #00807f;">
+    <div id="dtitem">
+      <img
+        src="https://yt3.ggpht.com/ytc/AKedOLR_FYBOVRmLhYLTvfoD_20GnaDpAX1f7s8mFeUhJHMV8DIASYA1Nf4gw9O--oKX=s88-c-k-c0x00ffffff-no-rj"
+      />
+      <button>Subscribe</button>
+    </div>
+    <div
+      style="width: 100%; position: absolute; left: 0; bottom: 0; border-top:solid; border-color: #fffffd; height: 22px; background-color: #c0cdcb;"
+    >
+      <button style="font-weight: bold;">
+        Start
+      </button>
+      <button id="tbitem">
+        ythr
+      </button>
+    </div>
+     <script src="https://raw.githubusercontent.com/nextapps-de/winbox/master/dist/winbox.bundle.js"></script>
+    <script>
+      new WinBox("Modal Window", {
+        modal: true
+      });
+    </script>
+  </body>
+</html>
